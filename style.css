@@ -57,3 +57,35 @@ footer {
     color: #fff;
     padding: 10px 0;
 }
+
+/* Collapsible Section Styles */
+.collapsible-header {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.collapsible-content {
+    display: none;
+    margin-top: 10px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Visitor Info Section */
+#visitor-info {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+#visitor-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
