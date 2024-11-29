@@ -12,7 +12,8 @@ function detectOS() {
 // Capture visitor info
 const visitorInfo = {
     userAgent: navigator.userAgent,
-    os: detectOS() // Add OS detection
+    os: detectOS(), // Add OS detection
+    ip: ""  // You might want to use an external service to get the user's IP (like https://ipinfo.io)
 };
 
 // Send visitor info to the backend
