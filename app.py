@@ -29,13 +29,14 @@ def index():
 # API to store visitor info
 @app.route('/api/store-visitor', methods=['POST'])
 def store_visitor():
-    data = request.json
-    print(f"Received data: {data}")  # Log the incoming data
-    ip = data.get('ip') if data else None  # Extract IP or set to None if no data
-    user_agent = data.get('userAgent') if data else None
-    visit_time = datetime.now()
-
     try:
+        data = request.get_json()  # Get JSON data from the request
+        print(f"Received data: {data}")  # Log the incoming data
+        ip = data.get('ip') if data else None  # Extract IP or set to None if no data
+        user_agent = data.get('userAgent') if data else None
+        visit_time = datetime.now()
+
+        # Insert visitor info into the database
         cursor.execute(
             "INSERT INTO visitors (ip_address, user_agent, visit_time) VALUES (%s, %s, %s)",
             (ip, user_agent, visit_time)
@@ -46,7 +47,9 @@ def store_visitor():
     except mysql.connector.Error as e:
         print(f"MySQL Error: {e}")
         return jsonify({"error": str(e)}), 500
-
+    except Exception as e:
+        print(f"Error: {e}")
+        return jsonify({"error": "Internal Server Error"}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)
