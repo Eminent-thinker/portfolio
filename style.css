@@ -58,23 +58,30 @@ footer {
     padding: 10px 0;
 }
 
-/* Collapsible Section Styles */
+/* Updated Collapsible Header Styles */
 .collapsible-header {
     cursor: pointer;
-    background: #333;
+    background: #555; /* Subtle background color for contrast */
     color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px 10px; /* Reduced padding for smaller size */
+    border-radius: 3px;
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
+    font-size: 0.9em; /* Reduce font size */
+    font-weight: bold; /* Keep it noticeable */
+}
+
+.collapsible-header:hover {
+    background: #444; /* Slightly darker on hover for better interaction feedback */
 }
 
 .collapsible-content {
     display: none;
-    margin-top: 10px;
+    margin-top: 5px;
     background: #f4f4f4;
     padding: 10px;
     border-radius: 5px;
+    font-size: 0.9em; /* Match font size to the headers for consistency */
 }
 
 /* Visitor Info Section */
