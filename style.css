@@ -44,55 +44,9 @@ h2 {
     margin-bottom: 10px;
 }
 
-.project {
-    margin-bottom: 20px;
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 footer {
     text-align: center;
     background: #333;
     color: #fff;
     padding: 10px 0;
-}
-
-/* Updated Collapsible Header Styles */
-.collapsible-header {
-    cursor: pointer;
-    background: #555; /* Subtle background color for contrast */
-    color: #fff;
-    padding: 5px 10px; /* Reduced padding for smaller size */
-    border-radius: 3px;
-    margin-bottom: 5px;
-    text-align: left; /* Align text to the left */
-    font-size: 0.9em; /* Reduce font size */
-    font-weight: bold; /* Keep it noticeable */
-}
-
-.collapsible-header:hover {
-    background: #444; /* Slightly darker on hover for better interaction feedback */
-}
-
-.collapsible-content {
-    display: none;
-    margin-top: 5px;
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 0.9em; /* Match font size to the headers for consistency */
-}
-
-/* Visitor Info Section */
-#visitor-info {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-#visitor-info p {
-    margin: 5px 0;
-    font-size: 1.1em;
 }
