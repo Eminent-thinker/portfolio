@@ -17,13 +17,14 @@ const visitorInfo = {
 };
 
 // Send visitor info to the backend
-fetch('/api/store-visitor', {
+fetch('http://localhost:5000/api/store-visitor', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify(visitorInfo)
 })
+
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
