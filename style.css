@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 40px 20px;
+    text-align: center; /* Center aligns for all screen sizes */
+}
+
+section {
+    padding: 15px;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header */
+h2 {
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+/* Passport Image */
+.passport-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.passport-img {
+    width: 100%; /* Default full width */
+    max-width: 150px; /* Limit size */
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #000;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.passport-img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Stacks items on smaller screens */
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact p {
+    margin: 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    h2 {
+        font-size: 1.3em; /* Slightly smaller header font */
+    }
+
+    footer {
+        font-size: 0.8em; /* Smaller footer text */
+    }
+}
